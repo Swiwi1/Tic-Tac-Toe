@@ -1,0 +1,174 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    position: relative;
+    background-color: lightcyan;
+}
+
+.header-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    align-content: center;
+}
+
+h1 {
+    font-size: 3em;
+    font-family: cursive;
+    text-shadow: red 2px 2px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    align-content: center;
+    padding-bottom: 20px;
+}
+
+.container .toggle {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 40px;
+    background: black;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.container .toggle .toggle-button {
+    position: relative;
+    top: 5px;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container .toggle.active {
+    background: black;
+}
+
+.container .toggle.active .toggle-button {
+    left: 35px;
+}
+
+.h4-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    align-content: center;
+    text-shadow: red 1px 1px;
+}
+
+h4 {
+    position: relative;
+    font-size: 2em;
+    font-family: cursive;
+    margin-left: 10px;
+}
+
+.game-container {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 500px;
+    grid-template-columns: repeat(3, auto);
+    margin: auto;
+}
+
+.grid {
+    border: solid 2px;
+    width: 120px;
+    height: 120px;
+    align-content: center;
+    box-shadow: black 2px 2px;
+    font-size: 6em;
+    text-align: center;
+    font-family: cursive;
+}   
+
+.button-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.new-game-button {
+    margin-right: 20px;
+    font-size: 1.7em;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: black 2px 2px;
+    text-shadow: red 1px 1px;
+}
+
+.restart-game-button {
+    margin-left: 20px;
+    font-size: 1.7em;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: black 2px 2px;
+    text-shadow: red 1px 1px;
+}
+
+.result-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    align-content: center;
+    text-shadow: red 1px 1px;
+}
+
+.button-div-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 15px;
+}
+
+.bottom-button {
+    margin: 7px;
+    font-size: 1.7em;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: black 2px 2px;
+    text-shadow: red 1px 1px;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 250px;
+    background-color: azure;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.modal::backdrop {
+    background: linear-gradient(45deg, grey, black);
+    opacity: 0.8;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header-div">
+        <h1 class="game-title">Tic Tac Toe</h1>
+    </div>
+    <div class="h4-container">
+        <h4>Player One Starts</h4>
+    </div>
+    <div class="container">
+    </div>
+    <div class="button-div">
+        <button class="new-game-button" id="new-game-button">NEW GAME</button>
+        <button class="restart-game-button" id="restart-button">RESTART</button>
+    </div>
+    <div class="game-container">
+        <div class="grid" id="grid-0" data-number="0"></div>
+        <div class="grid" id="grid-1" data-number="1"></div>
+        <div class="grid" id="grid-2" data-number="2"></div>
+        <div class="grid" id="grid-3" data-number="3"></div>
+        <div class="grid" id="grid-4" data-number="4"></div>
+        <div class="grid" id="grid-5" data-number="5"></div>
+        <div class="grid" id="grid-6" data-number="6"></div>
+        <div class="grid" id="grid-7" data-number="7"></div>
+        <div class="grid" id="grid-8" data-number="8"></div>
+    </div>
+        <div class="result-container">
+                <h4 class="result-text" id="result-text"></h4>
+        </div>
+    
+        <div class="modal-container">
+            <dialog class="modal" id="modal">
+                <form class="form" id="game-form" method="dialog">
+                    <button id="close-btn" class="-close-button">&#10006</button>
+                    <legend>Game Details</legend>
+                    <br>
+                    <input type="radio" id="player-vs-player" name="opponent" value="player">
+                    <label for="for-player-vs-player">Player vs Player</label><br>
+                    <button class="submit-button" type="submit">Submit</button>
+                </form>
+            </dialog>
+
+    <script src="index.js"></script>
+</body>
+</html>
